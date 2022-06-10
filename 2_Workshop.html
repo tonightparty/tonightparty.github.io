@@ -4,29 +4,14 @@
 <head><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Titillium Web">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="script/STAAR.css" type="text/css" />
+<script src="./script/jquery.js"></script>
 <title>STAAR Workshop Page</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
-
-<div class="menu-category">STTAR</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-category">1st Workshop</div>
-<div class="menu-item"><a href="1st Workshop(21-07-14)/2021 Kick-off Workshop.pdf" target="_blank">Programs</a></div>
-<div class="menu-category">2nd Workshop</div>
-<div class="menu-item"><a href="2nd Workshop(22-02-09)/2022 Winter Workshop.pdf" target="_blank">Programs</a></div>
-<div class="menu-item"><a href="2_Workshop.html">Presentations</a></div>
-<div class="menu-item"><a href="ready.html">Pictures</a></div>
-<div class="menu-category">3rd Workshop(TBA)</div>
-<div class="menu-item"><a href="ready.html">Programs</a></div>
-<div class="menu-item"><a href="ready.html">Presentations</a></div>
-<div class="menu-item"><a href="ready.html">Pictures</a></div>
-<div class="menu-category">Contact</div>
-<div class="menu-item"><a href="contact.html">STAAR-Location</a></div>
-<div class="menu-category">Since 2022.05<br><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fstaar2021.github.io%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a></div>
-
+  <div data-include="./left_menu.html"></div>
 </td>
 
 <td id="layout-content">
@@ -271,3 +256,8 @@
 </table>
 </body>
 </html>
+<script>
+$(document).ready(function(){
+  $('#layout-menu').load("./left_menu.html");
+});
+</script>
