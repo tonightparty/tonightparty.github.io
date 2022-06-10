@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Titillium Web">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="script/hoon.css" type="text/css" />
+<script src="./script/jquery.js"></script>
+<title>HOON's Page</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+
+  <td id="layout-menu">
+    <div data-include="./menu.html"></div>
+  </td>
+
+<td id="layout-content">
+<div id="toptitle">
+<h1>Journal Publication</h1>
+<h2>2022</h2>
+
+<h2>2021</h2>
+<h2>2013</h2>
+<table>
+<tr valign="top">
+    <td align="right" class="bibtexnumber">
+        [<a name="TCSVT-2012-djpark">1</a>]
+    </td>
+    <td class="bibtexitem">
+        <u>Daejin Park</u><sup>*</sup>, Chang&nbsp;Min Kim, Sungho Kwak, and Tag&nbsp;Gon Kim.
+        <b> A Low-Power Fractional-Order Synchronizer for Syncless
+        Time-Sequential Synchronization of 3-D TV Active Shutter Glasses (<font color=red>SCI</font>)</b> <em>IEEE Transactions on Circuits and Systems for Video Technology</em>,
+        23(2):364-369, Feb 2013.
+        <a href="http://dx.doi.org/10.1109/TCSVT.2012.2203739">[DOI]</a>&nbsp;
+    </td>
+</tr>
+
+</table>
+<h2>2020</h2>
+
+<h2>2019</h2>
+
+<h2>2018</h2>
+
+<h2>2017</h2>
+
+<h2>2016</h2>
+
+<h2>2015</h2>
+<ul>
+    <li><p>J. Lee, S. Lee, J. Kim, J. Park, J. Shin, and P. Choi, <b>Design of 8-bit Single Slope ADC for Signal Processing of Multiple Image Sensors</b> in Journal of Sensor Science and Technology (JSST), Vol. 24, No. 4, pages 252-257, 2015.</p>
+    </li>
+    <li><p>S. Lee, J. Kim, J. Shin, and P. Choi, <b>Algorithm of Modified Single-slope A/D Converter with Improved Conversion Time for CMOS Image Sensor System</b> in Journal of Sensor Science and Technology (JSST), Vol. 24, No. 6, pages 359-363, 2015.</p>
+    </li>
+    <li><p>S. Woo, C. Han, J. Baek, S. Lee, M. Jung, S. Choo, J. Park, J. Yoo, S. Jung, and J. Kim, <b>Preliminary study of Angle sensor module for Vehicle Steering System Based on Multi-track Encoder</b> in Journal of Sensor Science and Technology (JSST), Vol. 26, No. 6, pages 432-437, 2017.</p>
+    </li>
+    <li><p>S. Lee, D. Lee, P. Choi, and D. Park, <b>Accuracy-Power Controllable LiDAR Sensor System with 3D Object Recognition for Autonomous Vehicle</b> Sensors, 2020.</p>
+    </li>
+    <li><p>Sanghoon Lee and Daejin Park. <b>Efficient Power Consumption Technique of LiDAR Sensor for Detection Accuracy Control Based on Vehicle Speed</b> IEMEK Journal of Embedded Systems and Applications, 2020.</p>
+    </li>
+</ul>
+
+<div id="footer">
+<div id="footer-text">Copyright ⓒ 2022 by STAAR, All rights reserved.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
+<script>
+$(document).ready(function(){
+  $('#layout-menu').load("./menu.html");
+});
+</script>
