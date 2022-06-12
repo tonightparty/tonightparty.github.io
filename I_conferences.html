@@ -1,4 +1,26 @@
-<h3>International Conference Publications</h3>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Titillium Web">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="script/hoon.css" type="text/css" />
+<script src="./script/jquery.js"></script>
+<title>HOON's Page</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+
+  <td id="layout-menu">
+    <div data-include="./menu.html"></div>
+  </td>
+
+<td id="layout-content">
+<div id="toptitle">
+<h1>Conferences</h1>
+</div>
+
+<h2>International Conference Publications</h2>
 <ul>
 <li><p>S. Lee, J. Kim, J. Park, A. Kim, J. Lee, J. Shin and P. Choi, <b>MODIFIED SINGLE-SLOPE A/D CONVERTER WITH IMPROVING CONVERSION TIME FOR CIS SYSTEM</b> in The 7th Asia-Pacific Conference on Transducers and Micro/Nano Technologies (APCOT2014), 2014.</p>
 </li>
@@ -13,7 +35,7 @@
 <li><p>Sanghoon Lee and Daejin Park. <b>Efficient Power Control Using Variable Resolution Algorithm for LiDAR Sensor-based Autonomous Vehicle</b> In IEEE ISOCC 2021, 2021.</p>
 </li>
 </ul>
-<h3>Domestic Conference Presentations</h3>
+<h2>Domestic Conference Presentations</h2>
 <ul>
 <li><p>S. Lee, J. Kim, B. Goo, J. Shin, and P. Choi, <b>Design of the Hybrid 8-bits A/D Converter</b> in 2011 IEEK Fall Conference, 2011.</p>
 </li>
@@ -30,3 +52,19 @@
 <li><p>M. Jung, and S. Lee, <b>Object Perception Algorithm based on LiDAR for Autonomous Vehicle</b> in 2017 IEIE FALL CONFERENCE, 2017.</p>
 </li>
 </ul>
+
+<div id="footer">
+<div id="footer-text">Copyright ⓒ 2022 by HOON, All rights reserved.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
+<script>
+$(document).ready(function(){
+  $('#layout-menu').load("./menu.html");
+});
+</script>
