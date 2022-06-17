@@ -9,3 +9,15 @@
 <div class="menu-category">Contact</div>
 <div class="menu-item"><a href="contact.html">Location</a></div>
 <div class="menu-category">Since 2022.06<br><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Ftonightparty%2Ftonightparty.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a></div>
+
+<script>
+    $(document).ready(function(){
+      var path = $(location).attr('pathname');
+      $( "a" ).each(function( index ) {
+        if($( this ).attr("href") == path)
+        {
+          $( this ).addClass("current");
+        }
+      });
+    });
+    </script>
