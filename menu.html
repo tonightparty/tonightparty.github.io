@@ -12,7 +12,8 @@
 
 <script>
     $(document).ready(function(){
-        var path = $(location).attr('pathname');
+        var path = $(location).attr('pathname').replace("/","");
+        console.log(path);
         $( "a" ).each(function( index ) {
             if($( this ).attr("href") == path)
             {
