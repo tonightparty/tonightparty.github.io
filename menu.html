@@ -1,5 +1,5 @@
 <div class="menu-category">Sanghoon Lee</div>
-<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="index.html" id=""home">Home</a></div>
 <div class="menu-item"><a href="I_reserch.html">Research</a></div>
 <div class="menu-item"><a href="I_publications.html">Journals</a></div>
 <div class="menu-item"><a href="I_conferences.html">Conferences</a></div>
@@ -13,12 +13,19 @@
 <script>
     $(document).ready(function(){
         var path = $(location).attr('pathname').replace("/","");
-        console.log(path);
-        $( "a" ).each(function( index ) {
-            if($( this ).attr("href") == path)
-            {
-                $( this ).addClass("current");
-            }
-        });
+        if(path != ""){
+            $( "a" ).each(function( index ) {
+            
+                if($( this ).attr("href") == path)
+                {
+                    $( this ).addClass("current");
+                }
+            });
+        }
+        else
+        {
+            $("#home").addClass("current");
+        }  
     });
+
 </script>
