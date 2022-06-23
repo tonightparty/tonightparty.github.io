@@ -359,3 +359,7 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+.table_contents tr td {
+	vertical-align: middle;
+}
